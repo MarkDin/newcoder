@@ -12,7 +12,9 @@ def run():
 
 @app.route('/profile/<uid>/', methods=['Get', 'POST'])
 def profile(uid):
-    return render_template('profile.html', uid=uid)
+    list = ['a', 'b', 'c', 'd']
+    d = {'name': 'dk', 'age': '12'}
+    return render_template('profile.html', uid=uid, list=list, d=d)
 
 
 if __name__ == "__main__":
