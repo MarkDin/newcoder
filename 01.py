@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/index/')  # 指定某个页面路径的处理函数
 @app.route('/')
 def run():
-    return "hello"
+    return render_template('test.html')
 
 
 @app.route('/profile/<uid>/', methods=['Get', 'POST'])
